@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MyNewApp</title>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<title>MyNewApp</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+<%= csrf_meta_tags %>
 </head>
 <body>
-	<div class="container">
-		<div class="jumbotron">
-			<h1>Welcome to my website!</h1>
-			<div class="time"><h2><%= current_date_and_time %></h2></div>
-		</div>
-		<ul>
-		  <li><%= link_to 'Home', root_path %></li>
-		  <li><%= link_to 'About', about_path %></li>
-		  <li><%= link_to 'Cat Pictures', cat_pictures_path %></li>
-		</ul>
-		<br>
-		<%= yield %>
-	</div>
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/bootstrap.min.js"></script>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Welcome to my website!</h1>
+            <h2><%= current_date_and_time %></h2>
+        </div>
+    </div>
+    <ul>
+        <li><%= link_to 'Home', root_path %></li>
+        <li><%= link_to 'About', about_path %></li>
+        <li><%= link_to 'Cat Pictures', cat_pictures_path %></li>
+    </ul>
+    <br>
+
+
+    <%= yield %>
+
+
+    </div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
+
